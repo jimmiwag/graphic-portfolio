@@ -45,6 +45,9 @@ body{
         top: 5%;
         height: 24px;
         width: auto;
+        @media (max-width: 1024px){
+            top: 20px;
+        }
     }
     .right-bottom-art{
         position: absolute;

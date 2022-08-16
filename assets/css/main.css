@@ -49,6 +49,11 @@ body {
   height: 24px;
   width: auto;
 }
+@media (max-width: 1024px) {
+  .background .right-top-art {
+    top: 20px;
+  }
+}
 .background .right-bottom-art {
   position: absolute;
   right: -30px;
