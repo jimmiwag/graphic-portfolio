@@ -72,6 +72,7 @@ body{
             color: $white;
             font-weight: 600;
             padding: 0 8px;
+            margin-bottom: 20px;
             span{
                 color: $maroonColor;
                 font-size: 18px;
@@ -79,7 +80,7 @@ body{
             }
             @media (max-width: 1024px){
                 font-size: 26px;
-                margin-bottom: -10px;
+                margin-bottom: 10px;
                 span{
                     font-size: 16px;
                 }
@@ -103,7 +104,7 @@ body{
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                padding: 20px 0;
+                padding: 0px 0 20px;
                 img{
                     margin: 8px;
                     width: 100%;

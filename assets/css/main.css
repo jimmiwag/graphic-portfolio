@@ -250,6 +250,7 @@ body {
   color: #ffffff;
   font-weight: 600;
   padding: 0 8px;
+  margin-bottom: 20px;
 }
 .content-area .content h2 span {
   color: #FA9055;
@@ -259,7 +260,7 @@ body {
 @media (max-width: 1024px) {
   .content-area .content h2 {
     font-size: 26px;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
   }
   .content-area .content h2 span {
     font-size: 16px;
@@ -284,7 +285,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 0px 0 20px;
 }
 .content-area .content .gallery-wrapper #gallery img {
   margin: 8px;
