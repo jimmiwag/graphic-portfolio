@@ -1,0 +1,130 @@
+@import './scss-components/colors';
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    vertical-align: text-top;
+  }
+body{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    .bottom-left-art{
+        position: absolute;
+        left: -20px;
+        bottom: 5%;
+        width: 100px;
+        height: auto;
+    }
+    .right-top-art{
+        position: absolute;
+        right: -20px;
+        top: 5%;
+        height: 24px;
+        width: auto;
+    }
+    .right-bottom-art{
+        position: absolute;
+        right: -30px;
+        bottom: -30px;
+        height: 150px;
+        width: 150px;
+    }
+}
+.content-area{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    @import './scss-components/sidebar';
+    .content{
+        padding: 40px 20px 20px;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        @media (max-width: 1024px){
+            padding: 60px 20px 20px;
+        }
+        h2{
+            font-size: 36px;
+            color: $white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            span{
+                color: $maroonColor;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            @media (max-width: 1024px){
+                font-size: 26px;
+                margin-bottom: 5px;
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+        .gallery-wrapper{
+            max-height: calc(100vh - 140px);
+            overflow: auto;
+            scrollbar-color:  $maroonColor $darkBlurColor;
+            scrollbar-width: thin;
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+            &::-webkit-scrollbar-track {
+                background: $darkBlurColor; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background: $maroonColor; 
+            }
+            #gallery{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    margin: 15px;
+                    width: 100%;
+                    max-width: calc(33.33% - 30px);
+                    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+                    border-radius: 12px;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    &.b-cards{
+                        aspect-ratio: 1.5/1;
+                    }
+                    &.s-posts{
+                        aspect-ratio: 1/1;
+                    }
+                    @media (max-width: 1280px){
+                        max-width: calc(50% - 30px);
+                    }
+                    @media (max-width: 576px){
+                        max-width: calc(100% - 30px);
+                    }
+                }
+            }
+        }
+    }
+}

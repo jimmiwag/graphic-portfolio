@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./assets/css/filter.css"> -->
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <title>M Jamshaid</title>
+</head>
+<body>
+    <div class="background">
+        <img class="bottom-left-art" src="./assets/images/bottom-left-art.svg" alt="bottom-left-art">
+        <img class="right-top-art" src="./assets/images/top-right.svg" alt="top right">
+        <!-- <img class="right-bottom-art" src="./assets/images/bottom-right-art.svg" alt="bottom right"> -->
+    </div>
+    <div class="content-area">
+        <div class="sidebar">
+            <div class="toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="profile">
+                <img src="./assets/images/my-profile.jpg" alt="m jamshaid">
+                <h3>M Jamshaid</h3>
+                <p>Graphics Designer</p>
+            </div>
+
+            <div id="buttons" class="work-list"></div>
+
+            <div class="social-icons">
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="./assets/images/icon-social.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="./assets/images/icon-social.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="./assets/images/icon-social.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="./assets/images/icon-social.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <h2 id="activeTagName">All Work</h2>
+            <div class="gallery-wrapper">
+                <div id="gallery">
+                    <img class="s-posts" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Social Media Posts" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Business Cards" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card2.jpg" data-tags="Business Cards" alt="jamshaid" />
+                    <img class="s-posts" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Social Media" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Business" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card2.jpg" data-tags="Cards" alt="jamshaid" />
+                    <img class="s-posts" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Media Posts" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Bus Cards" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card2.jpg" data-tags="Business C" alt="jamshaid" />
+                    <img class="s-posts" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Med Posts" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card.jpg" data-tags="Bu Cards" alt="jamshaid" />
+                    <img class="b-cards" src="./assets/images/work/business-cards/business-card2.jpg" data-tags="Siness C" alt="jamshaid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+        integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/filter-tags.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.toggler').click(function(){
+                $(this).toggleClass('opened');
+                $('.sidebar').toggleClass('show');
+            });
+        });
+    </script>
+</body>
+</html>
