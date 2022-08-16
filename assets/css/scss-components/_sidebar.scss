@@ -113,7 +113,7 @@
         @media (max-width: 1024px){
             max-height: calc(100vh - 280px);
         }
-        button{
+        button,a{
             background-color: transparent;
             border: none;
             text-align: left;
@@ -122,6 +122,8 @@
             color: $lightGrey;
             font-family: 'Poppins', sans-serif;
             font-size: 18px;
+            text-decoration: none;
+            display: block;
             @media (max-width: 1024px){
                 font-size: 16px;
             }
